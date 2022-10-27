@@ -1,3 +1,3 @@
-const sqrt = (a) => '1';
+const sqrt = (a) => String(Math.sqrt(+a));
 
 module.exports = sqrt;
