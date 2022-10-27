@@ -1,3 +1,3 @@
-const divide = (a, b) => '1';
+const divide = (a, b) => String(+a / +b);
 
 module.exports = divide;
