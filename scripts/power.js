@@ -1,3 +1,3 @@
-const power = (a, b) => '1';
+const power = (a, b) => String(Math.pow(+a, +b));
 
 module.exports = power;
