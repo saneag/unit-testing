@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="calculator">
+            <p class="calculator-header">Calculator</p>
+            <input type="number" placeholder="x" id="number_x" maxlength="15" />
+            <select class="operations" id="operations">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="divide">/</option>
+                <option value="multiply">*</option>
+                <option value="power">^</option>
+                <option value="sqrt">√</option>
+            </select>
+            <input type="number" placeholder="y" id="number_y" maxlength="15"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+            <p class="equal-sign">=</p>
+            <p class="result" id="result"></p>
+            <button class="calc_button" onclick="handleCalculate()">Calculate</button>
+        </div>
+    </main>
+</body>
+
+</html>
